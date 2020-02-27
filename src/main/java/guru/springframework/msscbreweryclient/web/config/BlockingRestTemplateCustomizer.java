@@ -32,7 +32,7 @@ public class BlockingRestTemplateCustomizer implements RestTemplateCustomizer {
         this.connectionRequestTimeout = connectionRequestTimeout;
         this.socketTimeout = socketTimeout;
     }
-
+    //apache specific stuff
     public ClientHttpRequestFactory clientHttpRequestFactory(){
         PoolingHttpClientConnectionManager connectionManager = new PoolingHttpClientConnectionManager();
         connectionManager.setMaxTotal(maxTotalConnections);
